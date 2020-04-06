@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!-- LOG4J配置语句 -->
+        <setting name="logImpl" value = "LOG4J"/>
+        <!-- 设置resultMap 是否自动映射 NONE为不自动映射;不写为默认自动映射;FULL为自动映射全部相关属性 -->
+        <setting name="autoMappingBehavior" value="FULL"/>
+    </settings>
+    <!-- 给类起别名 -->
+    <typeAliases>
+        <package name="com.eunco.demonstrate.entity"/>
+    </typeAliases>
+</configuration>
