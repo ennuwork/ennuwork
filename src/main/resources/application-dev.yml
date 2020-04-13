@@ -14,6 +14,19 @@ spring:
       min-idle: 1
       test-on-borrow: true
       test-on-return: true
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
 mybatis:
   mapper-locations: classpath*:mapper/*.xml
   config-location: classpath:mybatis-config.xml
+# 开启SQL语句打印
+logging:
+  level:
+    com.eunco.demonstrate.dao: DEBUG
